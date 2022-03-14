@@ -1,0 +1,16 @@
+h3(class="text-primary") Ingrese productos
+br
+form(action='/products' method='post')
+  div(class="form-group")
+    label(for='nombre') Nombre
+    input(class="form-control" id="nombre" type='text' name='nombre')
+  div(class="form-group")
+    label(for='precio') Precio
+    input(class="form-control" id="precio" type='number' name='precio')
+  div(class="form-group")
+    label(for='foto') Foto URL
+    input(class="form-control" id="foto" type='url' name='foto')
+  input(class="btn btn-success" type='submit' value='Enviar')
+  br
+  p(class='text') Mira los productos 
+    a(href='/products')  Aqui 
